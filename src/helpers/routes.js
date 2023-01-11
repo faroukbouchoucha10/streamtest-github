@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 
-export function  IsUserBrowserRouter({ user, loggedInPath, children, ...rest}) {
-    return (
+export function IsUserRedirect({ user, loggedInPath, children, ...rest}) {
+	return (
         <Route
             {...rest}
             render={() => {
